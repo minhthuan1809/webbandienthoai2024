@@ -270,4 +270,7 @@ i {
   .header--title {
     font-size: 0.7rem;
   }
+  .nav--mobile .nav--infomation__mobile .items a {
+    font-size: 1.2rem;
+  }
 }
