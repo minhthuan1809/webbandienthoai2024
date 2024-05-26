@@ -212,7 +212,40 @@ i {
   background-color: white;
   color: red;
 }
+/* <!-- menu lưa chọn các sản phẩm  --> */
+.menu--bottom {
+  background-color: #00483d25;
+  overflow: scroll;
+}
+.menu--bottom::-webkit-scrollbar {
+  display: none;
+}
+.menu--bottom .menu--choose {
+  width: 70%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0rem auto;
+  justify-content: space-between;
+}
+.menu--choose .item {
+  margin: 0.5rem;
+}
+.menu--choose .item a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 1.2vw;
+  transition: all 0.1s ease-in-out;
+}
+.menu--choose .item a:hover {
+  transform: scale(1.1);
+}
 
+.menu--choose .item a .img img {
+  margin-right: 1rem;
+}
 /* // footer  */
 .footer--page {
   background-color: var(--bg--color);
@@ -310,6 +343,16 @@ div {
   #nav--list__check:checked ~ .nav--infomation__mobile {
     transform: translate(0%);
   }
+
+  .menu--choose .item a .img img {
+    display: block;
+  }
+  .menu--choose .item a .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 768.98px) {
@@ -332,6 +375,13 @@ div {
   .menu--desktop .menu--search {
     padding-right: 1rem;
   }
+  .menu--choose .item a {
+    font-size: 1.5vw;
+  }
+  .menu--bottom .menu--choose {
+    width: 100%;
+    margin-right: 2rem;
+  }
 }
 
 @media screen and (max-width: 576.98px) {
@@ -349,5 +399,12 @@ div {
   }
   .nav--infomation {
     justify-content: center;
+  }
+
+  .menu--choose .item a {
+    font-size: 2vw;
+  }
+  .menu--bottom .menu--choose {
+    margin-right: 2rem;
   }
 }
