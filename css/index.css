@@ -123,6 +123,7 @@ body {
   inset: 0;
   visibility: hidden;
   opacity: 0;
+  z-index: 2;
   transition: all 0.3s ease-in-out;
 }
 .nav--infomation__mobile {
@@ -280,6 +281,8 @@ i {
   width: 100%;
   height: auto;
   overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .iphone--produce:hover .img img {
   transform: scale(1.1);
@@ -532,6 +535,9 @@ div {
     padding: 0.1rem;
     color: #8a8175;
     font-size: 10px;
+  }
+  .iphone--produce__text h2 {
+    margin-bottom: 2rem;
   }
   div.stars {
     flex-direction: column-reverse;
