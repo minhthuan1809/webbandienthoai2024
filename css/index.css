@@ -546,8 +546,8 @@ div {
   justify-content: center;
 }
 .customer--list .customer--list__item .img {
-  width: 20rem;
-  height: auto;
+  width: 15rem;
+  height: 20rem;
   margin-right: 1rem;
   border-radius: 20px;
   overflow: hidden;
