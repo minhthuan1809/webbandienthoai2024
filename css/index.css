@@ -10,7 +10,7 @@ body {
   background-color: #f4f4f4;
 }
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 7px;
 }
 
 /* Màu nền của thanh cuộn */
