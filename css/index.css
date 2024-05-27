@@ -254,13 +254,112 @@ i {
   margin: 2rem auto;
 }
 .carousel-item {
-  height: 25rem;
+  height: 20rem;
   width: 100%;
 }
 .carousel-item img {
   width: 100%;
   height: 100%;
 }
+/* cart  */
+.iphone--container {
+  width: 85%;
+  margin: 1rem auto;
+}
+.iphone--produce {
+  /* margin: 0.5rem; */
+  border-radius: 10px;
+  text-decoration: none;
+  background: white;
+
+  height: auto;
+  display: block;
+  color: black;
+}
+.iphone--produce .img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.iphone--produce:hover .img img {
+  transform: scale(1.1);
+}
+.iphone--produce h2 {
+  font-size: 0.9rem;
+  margin-block: 1rem;
+  display: block;
+  height: 1.5rem;
+}
+
+.iphone--produce .img img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+.iphone--produce__text {
+  width: 80%;
+  margin: 0 auto;
+}
+.iphone--produce .Memory {
+  margin-block: 1rem;
+  display: block;
+}
+.iphone--produce .Memory span {
+  border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  padding: 0.1rem 1rem;
+  color: #8a8175;
+  font-size: 12px;
+}
+.iphone--produce p {
+  font-weight: 700;
+  font-size: 1.3vw;
+  color: red;
+  display: block;
+  margin-block: 1rem;
+  padding-block: 1rem;
+}
+div.stars {
+  display: flex;
+}
+div.stars span {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+input.star {
+  display: none;
+}
+
+label.star {
+  float: right;
+  font-size: 15px;
+  color: #fd4;
+
+  transition: all 0.2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: "\f005";
+  color: #fd4;
+  transition: all 0.25s;
+}
+
+input.star-1:checked ~ label.star:before {
+  color: #fe7;
+}
+
+label.star:hover {
+  transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before {
+  content: "\f006";
+  font-family: FontAwesome;
+}
+
 /* // footer  */
 .footer--page {
   background-color: var(--bg--color);
@@ -329,6 +428,7 @@ div {
   width: 100%;
   margin-top: 1rem;
 }
+
 /* // reponsive */
 @media screen and (max-width: 992.98px) {
   .nav--infomation__top .items a {
@@ -368,6 +468,9 @@ div {
     align-items: center;
     border: none;
   }
+  .iphone--produce__text p {
+    font-size: 3vw;
+  }
 }
 
 @media screen and (max-width: 768.98px) {
@@ -397,6 +500,9 @@ div {
     width: 100%;
     margin-right: 2rem;
   }
+  .iphone--produce__text p {
+    font-size: 4vw;
+  }
 }
 
 @media screen and (max-width: 576.98px) {
@@ -421,5 +527,24 @@ div {
   }
   .menu--bottom .menu--choose {
     margin-right: 2rem;
+  }
+  .iphone--produce .Memory span {
+    padding: 0.1rem;
+    color: #8a8175;
+    font-size: 10px;
+  }
+  div.stars {
+    flex-direction: column-reverse;
+    text-align: center;
+    float: left;
+    width: 85%;
+    margin-bottom: 0.5rem;
+  }
+  div.stars span {
+    font-size: 0.9rem;
+    display: block;
+  }
+  .iphone--produce {
+    text-align: center;
   }
 }
