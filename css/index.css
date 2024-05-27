@@ -9,6 +9,24 @@
 body {
   background-color: #f4f4f4;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Màu nền của thanh cuộn */
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Màu xám nhạt */
+}
+
+/* Màu của thanh cuộn (nút kéo) */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bg--color);
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 
 .header--title {
   text-align: center;
@@ -263,11 +281,25 @@ i {
   height: 100%;
 }
 /* cart  */
-.iphone--container {
+.phone--container {
   width: 85%;
   margin: 1rem auto;
 }
-.iphone--produce {
+.phone--title {
+  background-color: var(--bg--color);
+  width: 30%;
+  font-size: 1vw;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+  transition: all 0.1s ease-in-out;
+  font-weight: 700;
+}
+.phone--title:hover {
+  color: #009a82;
+}
+.phone--produce {
   /* margin: 0.5rem; */
   border-radius: 10px;
   text-decoration: none;
@@ -277,46 +309,46 @@ i {
   display: block;
   color: black;
 }
-.iphone--produce .img {
+.phone--produce .img {
   width: 100%;
   height: auto;
   overflow: hidden;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.iphone--produce:hover .img img {
+.phone--produce:hover .img img {
   transform: scale(1.1);
 }
-.iphone--produce h2 {
+.phone--produce h2 {
   font-size: 0.9rem;
   margin-block: 1rem;
   display: block;
   height: 1.5rem;
 }
 
-.iphone--produce .img img {
+.phone--produce .img img {
   width: 100%;
   height: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   transition: transform 0.2s ease-in-out;
 }
-.iphone--produce__text {
+.phone--produce__text {
   width: 80%;
   margin: 0 auto;
 }
-.iphone--produce .Memory {
+.phone--produce .Memory {
   margin-block: 1rem;
   display: block;
 }
-.iphone--produce .Memory span {
+.phone--produce .Memory span {
   border-radius: 3px;
   border: 1px solid #e1e1e1;
   padding: 0.1rem 1rem;
   color: #8a8175;
   font-size: 12px;
 }
-.iphone--produce p {
+.phone--produce p {
   font-weight: 700;
   font-size: 1.3vw;
   color: red;
@@ -431,6 +463,121 @@ div {
   width: 100%;
   margin-top: 1rem;
 }
+/* // panner  */
+.paner {
+  width: 85%;
+  margin: 0 auto;
+}
+.paner .paner--img {
+  width: 100%;
+  height: auto;
+}
+.paner .paner--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn--phone {
+  text-align: center;
+}
+.btn--phone .btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  border: 0.1px solid var(--bg--color);
+  color: var(--bg--color);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  margin-block: 2rem;
+}
+.btn--phone .btn:hover {
+  background-color: var(--bg--color);
+  color: white;
+}
+/* customer */
+.customer .customer--title {
+  text-align: center;
+  margin-block: 2rem;
+  font-weight: 700;
+  color: #00483d;
+  -webkit-text-stroke: 0.1rem var(--bg--color);
+  color: transparent;
+}
+.customer--container {
+  color: var(--bg--color);
+  width: 88%;
+  margin: 2rem auto;
+  overflow: scroll;
+  box-shadow: 0 4px 6px #00000029;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.customer--container::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0;
+  height: 8px;
+}
+
+/* Đổi màu và kiểu dáng của thanh cuộn khi cuộn */
+.customer--container::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Bo góc của thanh cuộn */
+  background-color: #888; /* Màu nền của thanh cuộn khi cuộn */
+  height: 1rem;
+}
+
+.customer--container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Màu nền khi hover lên thanh cuộn */
+}
+
+.customer--list {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 2rem;
+}
+.customer--list .customer--list__item {
+  display: flex;
+  flex-wrap: nowrap;
+
+  align-items: center;
+  width: 200rem;
+  justify-content: center;
+}
+.customer--list .customer--list__item .img {
+  width: 20rem;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.customer--list .customer--list__item .img img {
+  width: 100%;
+  height: 100%;
+}
+.customer--text {
+  width: 30rem;
+}
+.customer--text h2 {
+  font-size: 2rem;
+  width: 90%;
+}
+.customer--text b {
+  font-size: 1.2rem;
+  font-family: 500;
+  display: block;
+  color: #009a82;
+  width: 90%;
+}
+.customer--text span {
+  font-size: 1.2rem;
+  font-family: 500;
+  display: block;
+  width: 90%;
+  height: 15rem;
+  overflow: auto;
+}
 
 /* // reponsive */
 @media screen and (max-width: 992.98px) {
@@ -471,9 +618,11 @@ div {
     align-items: center;
     border: none;
   }
-  .iphone--produce__text p {
+  .phone--produce__text p {
     font-size: 3vw;
   }
+
+  /* customer */
 }
 
 @media screen and (max-width: 768.98px) {
@@ -503,7 +652,7 @@ div {
     width: 100%;
     margin-right: 2rem;
   }
-  .iphone--produce__text p {
+  .phone--produce__text p {
     font-size: 4vw;
   }
 }
@@ -531,12 +680,12 @@ div {
   .menu--bottom .menu--choose {
     margin-right: 2rem;
   }
-  .iphone--produce .Memory span {
+  .phone--produce .Memory span {
     padding: 0.1rem;
     color: #8a8175;
     font-size: 10px;
   }
-  .iphone--produce__text h2 {
+  .phone--produce__text h2 {
     margin-bottom: 2rem;
   }
   div.stars {
@@ -550,7 +699,7 @@ div {
     font-size: 0.9rem;
     display: block;
   }
-  .iphone--produce {
+  .phone--produce {
     text-align: center;
   }
 }
