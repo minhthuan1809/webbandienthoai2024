@@ -126,6 +126,8 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .nav--infomation__mobile {
+  z-index: 1000;
+
   background-color: white;
   position: absolute;
   top: 0;
@@ -245,6 +247,19 @@ i {
 
 .menu--choose .item a .img img {
   margin-right: 1rem;
+}
+/* slide  */
+#carouselExampleControls {
+  width: 85%;
+  margin: 2rem auto;
+}
+.carousel-item {
+  height: 25rem;
+  width: 100%;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
 }
 /* // footer  */
 .footer--page {
