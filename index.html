@@ -12,14 +12,12 @@
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/animate.css">
+
 
     <!-- animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel='stylesheet' href='' https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
-    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
 
     <!-- add css  -->
     <link rel="stylesheet" href="./css/index.css">
@@ -167,7 +165,8 @@
             </button>
         </div>
     </header>
-    <section class="phone">
+    <section class="phone wow slideInRight animate__animated animate__backInLeft" data-wow-offset="10" data-
+        wow-iteration="10">
         <div class="phone--container  ">
             <h1 class="phone--title animate__animated animate__bounceInLeft">SẢN PHẨM BÁN CHẠY</h1>
             <div class="row  g-3">
@@ -320,7 +319,7 @@
             <img src="./img/paner1.jpg" alt="">
         </div>
     </section>
-    <section class="phone">
+    <section class="phone wow slideInRight " data-wow-offset="300" data- wow-iteration="10">
         <div class="phone--container  ">
             <h1 class="phone--title">SẢN PHẨM APPLE</h1>
             <div class="row  g-3">
@@ -821,6 +820,41 @@
                 </div>
             </div>
         </div>
+        <!-- tiện ích -->
+        <section class="utilities">
+            <div class="utilities--container">
+                <div class="row">
+                    <div class=" col-6 col-md-3  box">
+                        <div class="img"><img src="./img/utilities1.png" alt=""></div>
+                        <div class="box--text">
+                            <span>Sản Phẩm</span>
+                            <b>Chính hãng</b>
+                        </div>
+                    </div>
+                    <div class=" col-6 col-md-3 box">
+                        <div class="img"><img src="./img/utilities.png" alt=""></div>
+                        <div class="box--text">
+                            <span>Miễn phí vận chuyểnm</span>
+                            <b>TOÀN QUỐC</b>
+                        </div>
+                    </div>
+                    <div class=" col-6 col-md-3 box">
+                        <div class="img"><img src="./img/utilities3.png" alt=""></div>
+                        <div class="box--text">
+                            <span>Hotline hỗ trợ</span>
+                            <b>1900.2091</b>
+                        </div>
+                    </div>
+                    <div class=" col-6 col-md-3 box">
+                        <div class="img"><img src="./img/utilities4.png" alt=""></div>
+                        <div class="box--text">
+                            <span>Thủ tục đổi trả</span>
+                            <b>DỄ DÀNG</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </Section>
     <!-- end customer -->
     <footer class="footer--page">
@@ -906,6 +940,9 @@
                 </div>
             </div>
         </div>
+        <div class="Footer--Address">
+            <span>&copy; Copyright MyPhone</span>
+        </div>
     </footer>
 
 </body>
@@ -916,5 +953,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </html>

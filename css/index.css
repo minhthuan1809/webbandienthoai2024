@@ -395,6 +395,152 @@ label.star:before {
   font-family: FontAwesome;
 }
 
+/* // panner  */
+.paner {
+  width: 85%;
+  margin: 0 auto;
+}
+.paner .paner--img {
+  width: 100%;
+  height: auto;
+}
+.paner .paner--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn--phone {
+  text-align: center;
+}
+.btn--phone .btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  border: 0.1px solid var(--bg--color);
+  color: var(--bg--color);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  margin-block: 2rem;
+}
+.btn--phone .btn:hover {
+  background-color: var(--bg--color);
+  color: white;
+}
+
+/* customer */
+.customer .customer--title {
+  text-align: center;
+  margin-block: 2rem;
+  font-weight: 700;
+  color: #00483d;
+  -webkit-text-stroke: 0.1rem var(--bg--color);
+  color: transparent;
+}
+.customer--container {
+  color: var(--bg--color);
+  width: 85%;
+  margin: 2rem auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-shadow: 0 4px 6px #00000029;
+  background-color: white;
+  padding: 0 3rem;
+  border-radius: 20px;
+}
+.customer--container::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0;
+  height: 8px;
+}
+
+/* Đổi màu và kiểu dáng của thanh cuộn khi cuộn */
+.customer--container::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Bo góc của thanh cuộn */
+  background-color: #888; /* Màu nền của thanh cuộn khi cuộn */
+  height: 1rem;
+}
+
+.customer--container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Màu nền khi hover lên thanh cuộn */
+}
+
+.customer--list {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* padding-right: 1rem; */
+}
+.customer--list .customer--list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding: 1rem;
+}
+.customer--list .customer--list__item .img {
+  width: 15vw;
+  height: 15vw;
+  margin-right: 1rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.customer--list .customer--list__item .img img {
+  width: 100%;
+  height: 100%;
+}
+.customer--text {
+  width: 26.5vw;
+  height: 15vw;
+}
+.customer--text h2 {
+  font-size: 1.7vw;
+  width: 90%;
+}
+.customer--text b {
+  font-size: 1.2vw;
+  font-family: 500;
+  display: block;
+  color: #009a82;
+  width: 90%;
+}
+.customer--text span {
+  font-size: 1vw;
+  font-family: 500;
+  display: block;
+  width: 90%;
+  height: 15rem;
+  overflow: auto;
+}
+/* Tiện ích */
+.utilities {
+  margin: 4rem;
+}
+.utilities--container {
+  width: 80%;
+  margin: 1.5rem auto;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .img {
+  width: 5rem;
+  margin-right: 1rem;
+}
+.box .img img {
+  width: 100%;
+  height: 100%;
+}
+.box--text span {
+  display: block;
+  font-size: 1rem;
+}
+.box--text b {
+  display: block;
+  font-size: 1.4rem;
+}
 /* // footer  */
 .footer--page {
   background-color: var(--bg--color);
@@ -412,6 +558,11 @@ div {
   background-color: transparent;
   color: white;
   padding-block: 1rem;
+}
+.Footer--Address {
+  text-align: center;
+  color: white;
+  padding: 2rem;
 }
 .page--suport {
   background: transparent;
@@ -463,122 +614,6 @@ div {
   width: 100%;
   margin-top: 1rem;
 }
-/* // panner  */
-.paner {
-  width: 85%;
-  margin: 0 auto;
-}
-.paner .paner--img {
-  width: 100%;
-  height: auto;
-}
-.paner .paner--img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.btn--phone {
-  text-align: center;
-}
-.btn--phone .btn {
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  border-radius: 100px;
-  border: 0.1px solid var(--bg--color);
-  color: var(--bg--color);
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-  margin-block: 2rem;
-}
-.btn--phone .btn:hover {
-  background-color: var(--bg--color);
-  color: white;
-}
-/* customer */
-.customer .customer--title {
-  text-align: center;
-  margin-block: 2rem;
-  font-weight: 700;
-  color: #00483d;
-  -webkit-text-stroke: 0.1rem var(--bg--color);
-  color: transparent;
-}
-.customer--container {
-  color: var(--bg--color);
-  width: 88%;
-  margin: 2rem auto;
-  overflow: scroll;
-  box-shadow: 0 4px 6px #00000029;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 20px;
-}
-.customer--container::-webkit-scrollbar {
-  background-color: transparent;
-  width: 0;
-  height: 8px;
-}
-
-/* Đổi màu và kiểu dáng của thanh cuộn khi cuộn */
-.customer--container::-webkit-scrollbar-thumb {
-  border-radius: 10px; /* Bo góc của thanh cuộn */
-  background-color: #888; /* Màu nền của thanh cuộn khi cuộn */
-  height: 1rem;
-}
-
-.customer--container::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Màu nền khi hover lên thanh cuộn */
-}
-
-.customer--list {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 2rem;
-}
-.customer--list .customer--list__item {
-  display: flex;
-  flex-wrap: nowrap;
-
-  align-items: center;
-  width: 200rem;
-  justify-content: center;
-}
-.customer--list .customer--list__item .img {
-  width: 15rem;
-  height: 20rem;
-  margin-right: 1rem;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.customer--list .customer--list__item .img img {
-  width: 100%;
-  height: 100%;
-}
-.customer--text {
-  width: 30rem;
-}
-.customer--text h2 {
-  font-size: 2rem;
-  width: 90%;
-}
-.customer--text b {
-  font-size: 1.2rem;
-  font-family: 500;
-  display: block;
-  color: #009a82;
-  width: 90%;
-}
-.customer--text span {
-  font-size: 1.2rem;
-  font-family: 500;
-  display: block;
-  width: 90%;
-  height: 15rem;
-  overflow: auto;
-}
-
 /* // reponsive */
 @media screen and (max-width: 992.98px) {
   .nav--infomation__top .items a {
@@ -701,5 +736,14 @@ div {
   }
   .phone--produce {
     text-align: center;
+  }
+  /* .utilities--container {
+    width: 100%;
+  } */
+  .box .img {
+    width: 100%;
+  }
+  .box--text span {
+    font-size: 1rem;
   }
 }
