@@ -479,6 +479,7 @@ option {
   padding: 15px 60px;
   outline: none;
   border: none;
+  margin-top: 1.5rem;
 }
 /* quên mật khẩu*/
 .full-width-content {
