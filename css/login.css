@@ -464,10 +464,11 @@ option {
   padding: 0px 2px 1px;
   white-space: nowrap;
 }
-.form-controls .submit-controls {
+.form-controls {
   display: flex;
   justify-content: center;
   justify-items: center;
+  margin-bottom: 0.5rem;
 }
 .form-controls .submit-controls button {
   background: transparent linear-gradient(180deg, #009981 0%, #00483d 100%) 0%
