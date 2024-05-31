@@ -1,5 +1,22 @@
 @charset "ISO-8859-1";
+body::-webkit-scrollbar {
+  width: 7px;
+}
 
+/* Màu nền của thanh cuộn */
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Màu xám nhạt */
+}
+
+/* Màu của thanh cuộn (nút kéo) */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bg--color);
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 /* đăng nhập*/
 .container {
   min-width: 1200px;
