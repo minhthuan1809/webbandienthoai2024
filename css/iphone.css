@@ -1,0 +1,26 @@
+@import url(../css/index.css);
+.panner--iphone .img {
+  width: 90%;
+  margin: 2rem auto;
+}
+.panner--iphone .img img {
+  width: 100%;
+  height: 100%;
+}
+.panner--iphone h1 {
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: 700;
+  background: var(--bg--color);
+  padding-block: 0.5rem;
+  color: white;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+/* xử lý phần sản phẩm   */
+.iphone--produce__container {
+  width: 85%;
+  margin: 0 auto;
+}

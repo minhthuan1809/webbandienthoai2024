@@ -137,7 +137,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* menu moile  */
 .bg--cover__mobile {
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
   inset: 0;
   visibility: hidden;
   opacity: 0;
@@ -148,7 +148,7 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 1000;
 
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 40%;
