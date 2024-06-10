@@ -207,7 +207,51 @@
     </div>
     <div class="pay">
         <strong>Tổng Thanh Toán : </strong>
-        <a href="#0">Đặt Hàng</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkoutModal">
+            Đặt Hàng
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Thông tin thanh toán</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="checkoutForm">
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="customerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerAddress" class="form-label">Địa chỉ nhận hàng</label>
+                            <input type="text" class="form-control" id="customerAddress" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerPhone" class="form-label">Số điện thoại</label>
+                            <input type="tel" class="form-control" id="customerPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerEmail" class="form-label">Gmail</label>
+                            <input type="email" class="form-control" id="customerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Loại hình thanh toán</label>
+                            <select class="form-select" id="paymentMethod" required>
+                                <option value="CreditCard">Thẻ tín dụng</option>
+                                <option value="CashOnDelivery">Thanh toán khi nhận hàng</option>
+                                <option value="BankTransfer">Chuyển khoản ngân hàng</option>
+                            </select>
+
+                        </div>
+
+                        <a href="#0" class="btn btn-primary">Xác nhận</a>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- end product  -->
     <footer class="footer--page">

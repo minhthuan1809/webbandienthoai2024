@@ -73,16 +73,15 @@
   justify-content: space-between;
   margin-block: 1rem;
 }
-.pay a {
+.pay button {
   background-color: #00483d;
   padding-inline: 1rem;
   padding-block: 0.5rem;
   color: white;
   border: 1px solid #00483d;
   transition: all 0.3s ease-in-out;
-  text-decoration: none;
 }
-.pay a:hover {
+.pay button:hover {
   background-color: transparent;
   color: #00483d;
   transform: scale(1.1);
