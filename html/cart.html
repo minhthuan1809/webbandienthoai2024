@@ -20,8 +20,8 @@
     <link rel="stylesheet" href=" https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
 
     <!-- add css  -->
-    <link rel="stylesheet" href="../css/phone.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
     <title>Myphone</title>
 </head>
 
@@ -135,7 +135,50 @@
 
         </div>
     </header>
+    <!-- // end header -->
 
+    <div class="container--cart">
+        <h1>Giỏ Hàng</h1>
+        <div class="cart--product" data-price="20000000">
+            <div class="cart--img">
+                <img src="../img/home/iphone13-gold.jpg" alt="">
+            </div>
+            <div class="name--product">
+                <b>Iphone 13 Promax</b>
+            </div>
+            <select class="choose">
+                <option value="5G">5GB</option>
+                <option value="5G">10GB</option>
+                <option value="5G">150GB</option>
+            </select>
+            <div class="price">
+                <b>
+                    20.000.000₫
+                </b>
+            </div>
+
+            <div class="quantity">
+                <button class="btn--cart btn--cart-decrease">-</button>
+                <button class="btn--cart__number">1</button>
+                <button class="btn--cart btn--cart-increase">+</button>
+            </div>
+
+            <div class="total">
+                <b></b>
+            </div>
+            <div class="btn--delete">
+                <button>Xóa</button>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="pay">
+        <strong>Tổng Thanh Toán : </strong>
+        <button>Đặt Hàng</button>
+    </div>
+    <!-- end product  -->
     <footer class="footer--page">
         <div class="footer--page__container">
             <div class="row">
@@ -230,6 +273,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="../js/cart.js"></script>
 </body>
 
 </html>
