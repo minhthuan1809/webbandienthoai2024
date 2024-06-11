@@ -1,0 +1,132 @@
+/* Name product styling */
+.nameProduct {
+  width: 70%;
+  margin: 1rem auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nameProduct h1 {
+  font-size: 1.5vw;
+}
+
+.nameProduct p {
+  color: #a8a8a8;
+}
+
+.nameProduct span {
+  color: red;
+}
+
+/* Container for the product */
+.container--product {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Row styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+/* Column styling */
+.col-6 {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Product image styling */
+.imgProduct img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product price styling */
+.Product-price {
+  font-size: 24px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+/* Product options styling */
+.chooseProduct,
+.colorProduct {
+  margin-bottom: 20px;
+}
+
+.chooseProduct p,
+.colorProduct p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Select dropdown styling */
+.choose {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button styling */
+.btnProduct button {
+  width: 100%;
+  padding: 15px;
+  background-color: #00483d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnProduct button:hover {
+  background-color: white;
+  color: #00483d;
+  border: 1px solid #00483d;
+}
+
+/* Installment buttons styling */
+.installment {
+  display: flex;
+  gap: 10px;
+}
+
+.installment button {
+  flex: 1;
+  padding: 15px;
+  background-color: #ff0000ad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.installment button:hover {
+  background-color: white;
+  color: #ff5722;
+  border: 1px solid #ff5722;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .col-6 {
+    width: 100%;
+  }
+
+  .installment {
+    flex-direction: column;
+  }
+}
