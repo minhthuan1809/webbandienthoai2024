@@ -51,10 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Bạn không thể mua quá 10 sản phẩm");
         }
         updateTotal(product);
-      } else if (event.target.closest(".btn--delete button")) {
-        product.remove();
-        calculateTotalPayment();
       }
+      // else if (event.target.closest(".btn--delete button")) { // xóa sản phẩm
+      //   product.remove();
+      //   calculateTotalPayment();
+      // }
     });
 
     // Initialize total value for each product
