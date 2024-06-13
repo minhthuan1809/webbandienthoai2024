@@ -7,27 +7,27 @@ h1 {
   color: #333;
 }
 
-.form-control {
-  width: 50%;
+.form--control {
+  width: 30%;
   margin: 0 auto;
-  padding: 15px;
-  font-size: 1.2em;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  border: none;
   background-color: #f7f7f7;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
 }
 
 .btn-success {
-  background-color: #007b5e;
   border: none;
-  padding: 10px 30px;
-  font-size: 1.2em;
+  padding: 10px 40px;
+  font-size: 1em;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.btn-success:hover {
-  background-color: #005f46;
+  background: transparent linear-gradient(179deg, #009981 0%, #00483d 100%) 0%
+    0% no-repeat padding-box;
 }
 
 .login-banner {
