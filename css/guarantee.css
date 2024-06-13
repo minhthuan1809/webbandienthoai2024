@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+.form-control {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+}
+
+.btn-success {
+  background-color: #007b5e;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #005f46;
+}
+
+.login-banner {
+  background-color: #009688;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.login-banner p {
+  font-size: 1.2em;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #009688;
+  border: none;
+  padding: 10px 30px;
+  font-size: 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-light:hover {
+  background-color: #f1f1f1;
+}

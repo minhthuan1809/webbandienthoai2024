@@ -22,6 +22,7 @@
     <!-- add css  -->
     <link rel="stylesheet" href="../css/phone.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/guarantee.css">
     <title>Myphone</title>
 </head>
 
@@ -33,7 +34,7 @@
         <div class="nav--infomation ">
             <ul class="nav--infomation__top">
                 <li class="items"><a href="../index.html">Trang Chủ</a></li>
-                <li class="items"><a href="#0">Giới thiệu</a></li>
+                <li class="items"><a href="../html/introduce.html">Giới thiệu</a></li>
                 <li class="items"><a href="#0">Sản phẩm đã xem</a></li>
                 <li class="items"><a href="./guarantee.html">Trung tâm bảo hành</a></li>
                 <li class="items"><a href="#0">Hệ thông 128 siêu thị</a></li>
@@ -111,13 +112,13 @@
                     <a href="#0" class="menu--check__product" title="Kiểm tra đơn hàng">
                         <i class="fa-solid fa-car"></i>
                     </a>
-                    <a href="#0" class="menu--cart" title="Giỏ hàng">
+                    <a href="./cart.html" class="menu--cart" title="Giỏ hàng">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>2</span>
                     </a>
                 </li>
-                <li class="items"><a href="#0">Bản mobile</a></li>
-                <li class="items"><a href="#0">Giới thiệu</a></li>
+                <li class="items"><a href="../index.html">Trang Chủ</a></li>
+                <li class="items"><a href="../html/introduce.html">Giới thiệu</a></li>
                 <li class="items"><a href="#0">Sản phẩm đã xem</a></li>
                 <li class="items"><a href="#0">Trung tâm bảo hành</a></li>
                 <li class="items"><a href="#0">Hệ thông 128 siêu thị</a></li>
@@ -132,6 +133,22 @@
 
         </div>
     </header>
+    <!-- end header -->
+    <div class="container text-center mt-5">
+        <h1>Kiểm tra đơn hàng của bạn</h1>
+        <form class="mt-3">
+            <div class="form-group">
+                <input type="text" class="form-control" id="orderID" placeholder="Vui lòng nhập mã đơn hàng *">
+            </div>
+            <button type="button" class="btn btn-success btn-lg m-3 ">Tra cứu</button>
+        </form>
+    </div>
+    <div class="login-banner mt-5">
+        <div class="container  d-flex justify-content-between align-items-center">
+            <p class="mb-0 text">Đăng nhập sẽ giúp bạn quản lý đơn hàng của mình và trải nghiệm website tốt hơn</p>
+            <button class="btn btn-light btn-lg ">Đăng nhập</button>
+        </div>
+    </div>
 
     <footer class="footer--page">
         <div class="footer--page__container">
@@ -216,6 +233,8 @@
             </div>
         </div>
     </footer>
+    <!-- end footer -->
+
 
     <!-- Thư viện FontAwesome JS -->
     <script src="https://kit.fontawesome.com/850c4145ac.js" crossorigin="anonymous"></script>
@@ -228,5 +247,6 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>
