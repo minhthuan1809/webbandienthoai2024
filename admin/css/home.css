@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #00483d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #00483d;
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  flex: 1 1 200px;
+  /* Adjust the width as needed */
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #00483d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.form-container button:hover {
+  background-color: #00332d;
+}
+
+.action-buttons button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.edit-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.update-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.timestamps {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+  margin-right: 20px;
+}
+
+.timestamps div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.timestamps div input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: calc(100% - 100px);
+}
+
+.search-container button {
+  padding: 8px 20px;
+  background-color: #00483d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-container button:hover {
+  background-color: #00332d;
+}

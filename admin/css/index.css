@@ -1,0 +1,55 @@
+:root {
+  --bg--color: #00483d;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 360px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: var(--bg--color);
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 93%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--bg--color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid var(--bg--color);
+  transition: all 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: white;
+  color: var(--bg--color);
+}

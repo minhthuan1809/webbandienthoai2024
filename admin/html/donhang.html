@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Đơn hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00483d;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #00483d;
+            color: white;
+        }
+
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            flex: 1 1 200px;
+            /* Adjust the width as needed */
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-container button {
+            padding: 10px;
+            background-color: #00483d;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .form-container button:hover {
+            background-color: #00332d;
+        }
+
+        .action-buttons button {
+            margin-right: 5px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .confirm-button {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .reject-button {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .update-button {
+            background-color: #2196f3;
+            color: white;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        .search-container input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            width: calc(100% - 100px);
+        }
+
+        .search-container button {
+            padding: 8px 20px;
+            background-color: #00483d;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .search-container button:hover {
+            background-color: #00332d;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .form-container {
+                flex-direction: column;
+            }
+
+            .form-group {
+                flex: 1 1 100%;
+                margin-right: 0;
+            }
+
+            .search-container input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .search-container button {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            th,
+            td {
+                padding: 6px;
+            }
+
+            .form-container button,
+            .search-container button {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="user.html">Home</a>
+        <a href="phone.html">Quản lý Sản phẩm</a>
+        <a href="donhang.html">Quản lý Đơn hàng</a>
+    </div>
+    <div class="container">
+        <h1>Quản lý Đơn hàng</h1>
+
+        <h2>Thêm/Cập nhật đơn hàng</h2>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="payment_id">ID Thanh toán:</label>
+                <input type="text" id="payment_id" name="payment_id" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="donhang_id">ID Đơn hàng:</label>
+                <input type="text" id="donhang_id" name="donhang_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user_id">ID Người dùng:</label>
+                <input type="text" id="user_id" name="user_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Tên Người dùng:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sotienthanhtoan">Số tiền thanh toán:</label>
+                <input type="number" id="sotienthanhtoan" name="sotienthanhtoan" required step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="phuongthucthanhtoan">Phương thức thanh toán:</label>
+                <input type="text" id="phuongthucthanhtoan" name="phuongthucthanhtoan">
+            </div>
+
+            <div class="form-group">
+                <label for="status">Trạng thái:</label>
+                <input type="text" id="status" name="status">
+            </div>
+
+            <button type="submit" class="update-button">Cập nhật đơn hàng</button>
+            <button type="submit">Thêm đơn hàng</button>
+        </div>
+
+        <h2>Danh sách Đơn hàng</h2>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Tìm kiếm đơn hàng...">
+            <button>Tìm kiếm</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Thanh toán</th>
+                    <th>ID Đơn hàng</th>
+                    <th>ID Người dùng</th>
+                    <th>Tên Người dùng</th>
+                    <th>Số tiền thanh toán</th>
+                    <th>Phương thức thanh toán</th>
+                    <th>Trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dữ liệu đơn hàng sẽ được hiển thị tại đây -->
+                <!-- Ví dụ mẫu -->
+                <tr>
+                    <td>001</td>
+                    <td>DH001</td>
+                    <td>U001</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>1000.00</td>
+                    <td>Thẻ tín dụng</td>
+                    <td>Chưa xử lý</td>
+                    <td class="action-buttons">
+                        <button class="confirm-button">Xác nhận</button>
+                        <button class="reject-button">Từ chối</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
