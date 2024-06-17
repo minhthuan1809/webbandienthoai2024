@@ -33,7 +33,6 @@
             color: black;
         }
 
-
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -144,12 +143,13 @@
             margin-bottom: 20px;
         }
 
-        .search-container input {
+        .search-container input,
+        .search-container select {
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 14px;
-            width: calc(100% - 100px);
+            margin-right: 10px;
         }
 
         .search-container button {
@@ -181,7 +181,12 @@
                 margin-right: 0;
             }
 
-            .search-container input {
+            .search-container {
+                flex-direction: column;
+            }
+
+            .search-container input,
+            .search-container select {
                 width: 100%;
                 margin-bottom: 10px;
             }
@@ -209,7 +214,7 @@
 
 <body>
     <div class="navbar">
-        <a href="user.html">Home</a>
+        <a href="home.html">Home</a>
         <a href="phone.html">Quản lý Sản phẩm</a>
         <a href="donhang.html">Quản lý Đơn hàng</a>
     </div>
@@ -265,10 +270,16 @@
         <h2>Danh sách Sản phẩm</h2>
         <div class="search-container">
             <input type="text" id="search" placeholder="Tìm kiếm sản phẩm...">
-            <button>Tìm kiếm</button>
+            <select id="brand_filter">
+                <option value="">Tất cả</option>
+                <option value="Apple">iPhone</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Samsung">Samsung</option>
+            </select>
+            <button onclick="filterProducts()">Tìm kiếm</button>
         </div>
 
-        <table>
+        <table id="product_table">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -303,6 +314,42 @@
                         <button class="delete-button">Xóa</button>
                     </td>
                 </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Xiaomi</td>
+                    <td>Mi 11</td>
+                    <td>699.99</td>
+                    <td>15</td>
+                    <td>128GB, Snapdragon 888</td>
+                    <td>NCC002</td>
+                    <td>
+                        <input type="file" id="file_input_xiaomi" class="hidden-input" accept="image/*">
+                        <img src="https://example.com/mi11.jpg" alt="Mi 11" id="product_image_xiaomi"
+                            style="width: 50px; cursor: pointer;">
+                    </td>
+                    <td class="action-buttons">
+                        <button class="edit-button">Sửa</button>
+                        <button class="delete-button">Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Samsung</td>
+                    <td>Galaxy S21</td>
+                    <td>799.99</td>
+                    <td>20</td>
+                    <td>256GB, Exynos 2100</td>
+                    <td>NCC003</td>
+                    <td>
+                        <input type="file" id="file_input_samsung" class="hidden-input" accept="image/*">
+                        <img src="https://example.com/s21.jpg" alt="Galaxy S21" id="product_image_samsung"
+                            style="width: 50px; cursor: pointer;">
+                    </td>
+                    <td class="action-buttons">
+                        <button class="edit-button">Sửa</button>
+                        <button class="delete-button">Xóa</button>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -310,6 +357,14 @@
     <script>
         document.getElementById('product_image').addEventListener('click', function () {
             document.getElementById('file_input').click();
+        });
+
+        document.getElementById('product_image_xiaomi').addEventListener('click', function () {
+            document.getElementById('file_input_xiaomi').click();
+        });
+
+        document.getElementById('product_image_samsung').addEventListener('click', function () {
+            document.getElementById('file_input_samsung').click();
         });
 
         document.getElementById('file_input').addEventListener('change', function (event) {
@@ -322,6 +377,42 @@
                 reader.readAsDataURL(file);
             }
         });
+
+        document.getElementById('file_input_xiaomi').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('product_image_xiaomi').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        document.getElementById('file_input_samsung').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('product_image_samsung').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        function filterProducts() {
+            const filter = document.getElementById('brand_filter').value.toLowerCase();
+            const rows = document.querySelectorAll('#product_table tbody tr');
+
+            rows.forEach(row => {
+                const brand = row.cells[1].textContent.toLowerCase();
+                if (filter === "" || brand.includes(filter)) {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        }
     </script>
 </body>
 
