@@ -1,0 +1,66 @@
+/* // css tuyển dụng */
+main.container {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+main h1 {
+  color: #00483d;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+main h2 {
+  color: #00483d;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+main ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+main ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+main p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+main p strong {
+  color: #00483d;
+}
+
+main .text-center {
+  text-align: center;
+}
+
+.main--application {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.main--application h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.btn--recruitment {
+  background-color: #00483d;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid #00483d;
+}
