@@ -496,6 +496,10 @@ label.star:before {
   width: 26.5vw;
   height: 15vw;
 }
+.text-clamp {
+  max-height: 10.5em;
+}
+
 .customer--text h2 {
   font-size: 1.7vw;
   width: 90%;
