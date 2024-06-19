@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.main-content {
+  width: 95%;
+  margin: 20px auto;
+}
+
+#searchProduct {
+  width: 20%;
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn__thongke {
+  background-color: #00332d;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #00332d;
+}
+
+.btn__thongke:hover {
+  background-color: white;
+  color: #00332d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #00332d;
+  color: white;
+}
+
+.filter {
+  margin: 1rem 0;
+}
+
+label {
+  margin-right: 0.5rem;
+}
