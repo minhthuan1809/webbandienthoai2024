@@ -1,0 +1,81 @@
+.img--users {
+  width: 20%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 1rem auto;
+}
+.img--users img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Styling cơ bản cho form */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #ccc;
+  background: #fff;
+}
+
+/* Styling cho các label và input */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Nút submit */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00483d;
+  color: white;
+  border: 2px solid #00483d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #00483d;
+}
+
+/* Cấu hình responsive */
+@media (max-width: 768px) {
+  form {
+    padding: 10px;
+  }
+
+  label,
+  input,
+  select,
+  button {
+    font-size: 14px;
+  }
+}
+
+/* Đặc biệt cho hình ảnh người dùng và username */
+/* .img--users img {
+    max-width: 100px; 
+    display: block;
+    margin: 10px auto; 
+  } */
+
+.username {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
